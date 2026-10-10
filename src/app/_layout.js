@@ -1,0 +1,15 @@
+import { Stack } from "expo-router";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
+export default function Layout() {
+  return (
+    <SafeAreaProvider>
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: "#f4f4f2" },
+          headerTintColor: "#273f28",
+        }}
+      />
+    </SafeAreaProvider>
+  );
+}
